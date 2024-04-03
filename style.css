@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Young Serif", serif;
+    font-size: 16px;
+}
+ul li {
+    list-style: none;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    background-color:   hsl(30, 54%, 90%);
+    display: grid;
+    place-items: center;
+
+}
+
+main {
+    padding: 20px;
+    background-color:  hsl(0, 0%, 100%);
+    width: 535px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+@media (max-width:767px) {
+    section {
+        padding: 20px;
+    }
+    main {
+        width:100%;
+    }
+}
+main .imge {
+    width: 100%;
+}
+
+main .imge img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+main  > h1 {
+    font-size: 1.4rem;
+    text-transform:capitalize;
+    margin: 20px 0;
+}
+
+main  > h1 + p {
+    line-height: 1.6;
+    color:  hsl(30, 10%, 34%);
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+main .box-1 {
+    background-color:   hsl(330, 100%, 98%);
+    padding: 10px;
+}
+
+
+main .box-1 h2 {
+    font-size: 1rem;
+    color: hsl(332, 51%, 32%);
+    text-transform: capitalize;
+
+}
+
+main .box-1 ul {
+    padding: 5px 0px 5px 25px;
+}
+
+main .box-1 ul li {
+    font-size: 14px;
+    line-height: 1.6;
+    position: relative;
+}
+
+main .box-1 ul li::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color:hsl(332, 51%, 32%) ;
+    left: -20px;
+    top: 9px;
+    border-radius: 50%;
+}
+
+main .box-1 ul li span {
+    color:hsl(30, 10%, 34%) ;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: hsl(14, 45%, 36%);
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+main .box-2 h2 + ul {
+    margin-bottom: 20px;
+}
+
+main .box-2 h2 + ul li  {
+    position: relative;
+    color:hsl(30, 10%, 34%) ;
+    padding-left: 30px;
+    line-height: 1.6;
+}
+
+.box-2 h2 + ul li::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: hsl(14, 45%, 36%);
+    left: 9px;
+    top: 13px;
+    border-radius: 50%;
+}
+
+.box-3 {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 20px;
+}
+
+.box-3 .num {
+    color:hsl(14, 45%, 36%) ;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.box-3 ul li {
+    line-height: 1.6;
+    color: hsl(30, 10%, 34%);
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.box-3  ul li span:last-child {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.box-4 {
+    color:hsl(30, 10%, 34%) ;
+}
+
+.box-4 p {
+    font-size:15px;
+    padding-bottom: 10px;
+}
+
+.box-4 .table .row {
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.box-4 .table .row span {
+    width: 50%;
+    padding-bottom: 20px;
+}
